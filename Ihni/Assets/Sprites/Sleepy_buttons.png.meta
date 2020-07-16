@@ -1,0 +1,251 @@
+fileFormatVersion: 2
+guid: e2d50013aa3c06b43a99749e8e20c8ce
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2471039894601822087
+    second: Sleepy_buttons_0
+  - first:
+      213: -2868426382325864706
+    second: Sleepy_buttons_1
+  - first:
+      213: -1648782544135308684
+    second: Sleepy_buttons_2
+  - first:
+      213: -2505099358627108677
+    second: Sleepy_buttons_3
+  - first:
+      213: 7383621583559383965
+    second: Sleepy_buttons_4
+  - first:
+      213: 6695965319551762263
+    second: Sleepy_buttons_5
+  - first:
+      213: -7658605124459933387
+    second: Sleepy_buttons_6
+  - first:
+      213: 6656742476869187275
+    second: Sleepy_buttons_7
+  - first:
+      213: 3485556422059840319
+    second: Sleepy_buttons_8
+  - first:
+      213: 4418349313680748393
+    second: Sleepy_buttons_9
+  - first:
+      213: 8419534338228845024
+    second: Sleepy_buttons_10
+  - first:
+      213: 7363971256004118037
+    second: Sleepy_buttons_11
+  - first:
+      213: 6197923312565589199
+    second: Sleepy_buttons_1
+  - first:
+      213: -5650783399391483821
+    second: Sleepy_buttons_2
+  - first:
+      213: 7961152822044731372
+    second: Sleepy_buttons_0
+  - first:
+      213: 8362908156143426692
+    second: Sleepy_buttons_3
+  - first:
+      213: 2863866996388750097
+    second: Sleepy_buttons_4
+  - first:
+      213: 5514622775791674770
+    second: Sleepy_buttons_5
+  - first:
+      213: 6746121560930690467
+    second: Sleepy_buttons_6
+  - first:
+      213: -2416681987856265973
+    second: Sleepy_buttons_7
+  - first:
+      213: 8556024433642916367
+    second: Sleepy_buttons_8
+  - first:
+      213: 1395306148560867438
+    second: Sleepy_buttons_9
+  - first:
+      213: -2715918447543460355
+    second: Sleepy_buttons_10
+  - first:
+      213: -7539283037142905518
+    second: Sleepy_buttons_11
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sleepy_buttons_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1207
+        width: 2834
+        height: 354
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f6f8721b5ea4220800000000000000
+      internalID: 2471039894601822087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sleepy_buttons_11
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 0
+        width: 818
+        height: 367
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516005267d4123660800000000000000
+      internalID: 7363971256004118037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sleepy_buttons_1
+      rect:
+        serializedVersion: 2
+        x: 678
+        y: 538
+        width: 1480
+        height: 463
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4959e2a62730650800000000000000
+      internalID: 6197923312565589199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
