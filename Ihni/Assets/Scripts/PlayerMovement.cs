@@ -11,8 +11,6 @@ public class PlayerMovement : MonoBehaviour {
 
         float horizontalMove = 0f;
         bool jump = false;
-        bool crouch = false;
-        bool sprint = false;
 
          // Update is called once per frame
          void Update () {
@@ -27,16 +25,6 @@ public class PlayerMovement : MonoBehaviour {
                animator.SetBool("IsJumping", true);
             }
 
-            if (Input.GetButtonDown("Sprint"))
-            {
-               sprint = true;
-               animator.SetBool("IsSprinting", true);
-            } else if (Input.GetButtonUp("Sprint"))
-            {
-               animator.SetBool("IsSprinting", false);
-               sprint = false;
-            }
-
           }
 
           public void OnLanding()
@@ -47,7 +35,7 @@ public class PlayerMovement : MonoBehaviour {
           void FixedUpdate ()
           {
                 // Move our character
-                controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump, sprint);
+                controller.Move(horizontalMove * Time.fixedDeltaTime, jump);
                 jump = false;
           }
 }
