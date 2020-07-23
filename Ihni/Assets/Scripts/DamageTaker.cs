@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DamageTaker : MonoBehaviour
 {
-    [Range(1, 4)] [SerializeField] private int Damage = 1;
+    [Range(1, 4)] [SerializeField] private int damage = 1;
 
     private PlayerHealth player;
 
@@ -16,7 +16,8 @@ public class DamageTaker : MonoBehaviour
     {
         if(collider.CompareTag("Player"))
         {
-            player.TakeDamage(Damage);
+            player.TakeDamage(damage);
         }
     }
+
 }

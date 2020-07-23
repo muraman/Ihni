@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class PlayerHealth : MonoBehaviour
 {
 
-	public int maxHealth = 20;
+	public int maxHealth = 4;
 	public int currentHealth;
 
 	public HealthBar healthBar;
@@ -24,18 +24,17 @@ public class PlayerHealth : MonoBehaviour
 			Die();
 		}
 	}
+	
+	public void Die()
+	{
+		SceneManager.LoadScene("DeathScreen");
+	}
 
 	public void TakeDamage(int damage)
 	{
 		currentHealth -= damage;
 
 		healthBar.SetHealth(currentHealth);
-	}
-	
-	public void Die()
-	{
-        SceneManager.LoadScene("Death");
-		Time.timeScale = 0;
 	}
 
 }
