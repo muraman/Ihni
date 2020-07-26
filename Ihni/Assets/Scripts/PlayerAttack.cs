@@ -25,8 +25,7 @@ public class PlayerAttack : MonoBehaviour
 
             if(Input.GetButtonDown("Attack"))
             {
-                IsAttacking();
-                Invoke("IsNotAttacking", 0.1f);
+                animator.SetTrigger("IsAttacking");
 
                 Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, whatIsEnemy);
                 for (int i = 0; i < enemiesToDamage.Length; i++)
@@ -42,10 +41,6 @@ public class PlayerAttack : MonoBehaviour
         }
     }
 
-    void IsAttacking()
-    {
-        animator.SetBool("IsAttacking", true);
-    }
 
     void IsNotAttacking()
     {

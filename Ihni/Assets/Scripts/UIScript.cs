@@ -8,10 +8,14 @@ public class UIScript : MonoBehaviour
     public static bool GameIsPaused = false;
 
     public GameObject pauseUI;
-
+    
+    void Start()
+    {
+        pauseUI.SetActive(false);
+    }
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if(Input.GetButtonDown("Cancel"))
         {
             if(GameIsPaused)
             {

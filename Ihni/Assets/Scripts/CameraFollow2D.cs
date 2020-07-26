@@ -2,50 +2,21 @@
 
 public class CameraFollow2D : MonoBehaviour
 {
-    public Transform target;
-    public Vector3 offset = new Vector3(0, 2.8f, 0);
-    public bool smoothFollow = true;
+private Transform target;
 
-    Vector2 moveToPos;
-    bool beginMove = false;
-    float distanceTmp = 0f;
+public Vector3 offset;
 
-    // Update is called once per frame
-    void LateUpdate()
-    {
-        if (!target)
-            return;
+public float smoothTime = 0.3f;
 
-        if (smoothFollow)
-        {
-            distanceTmp = ((target.position + offset) - transform.position).sqrMagnitude;
-            if (beginMove)
-            {
-                moveToPos = Vector3.Lerp(moveToPos, target.position + offset, Time.fixedDeltaTime * 7.75f);
-                transform.position = new Vector3(moveToPos.x, moveToPos.y, -10);
+private Vector3 velocity;
 
-                if (distanceTmp < 0.05f * 0.05f)
-                {
-                    beginMove = false;
-                }
-            }
-            else
-            {
-                if (distanceTmp > 0.5f * 0.5f)
-                {
-                    beginMove = true;
-                }
-            }
-        }
-        else
-        {
-            transform.position = new Vector3(target.position.x, target.position.y, -10);
-        }
+private void Update() 
+{
+    target = GameObject.FindGameObjectWithTag("Player").transform;
+}
 
-    }
-
-    void StopFollowing()
-    {
-        beginMove = false;
-    }
+private void FixedUpdate()
+{
+    transform.position = Vector3.SmoothDamp(transform.position, target.position + offset, ref velocity, smoothTime);
+}
 }
