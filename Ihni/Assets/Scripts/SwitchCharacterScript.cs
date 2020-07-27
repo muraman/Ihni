@@ -2,10 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SwitchCharacterScript : MonoBehaviour {
+public class SwitchCharacterScript : MonoBehaviour 
+{
 
 	// referenses to controlled game objects
 	public GameObject character1, character2;
+
+	public GameObject enemy;
 
 	// variable contains which avatar is on and active
 	int whichCharacterIsOn = 1;
@@ -13,7 +16,10 @@ public class SwitchCharacterScript : MonoBehaviour {
 	// Use this for initialization
 	void Start() 
 	{
-		// Enable first character and disable another one
+		// disable enemy at start
+		enemy.gameObject.SetActive(false);
+
+		// enable first character and disable another one
 		character1.gameObject.SetActive(true);
 		character2.gameObject.SetActive(false);
 	}
@@ -38,8 +44,11 @@ public class SwitchCharacterScript : MonoBehaviour {
 			character1.gameObject.SetActive(false);
 			character2.gameObject.SetActive(true);
 
-			//tp one character to another
+			// teleport one character to another
 			character2.gameObject.transform.position = character1.gameObject.transform.position;
+			
+			// enable enemy
+			enemy.gameObject.SetActive(true);
 
 			break;
 
@@ -53,8 +62,11 @@ public class SwitchCharacterScript : MonoBehaviour {
 			character1.gameObject.SetActive(true);
 			character2.gameObject.SetActive(false);
 
-			//tp one character to another
+			// teleport one character to another
 			character1.gameObject.transform.position = character2.gameObject.transform.position;
+
+			// disable enemy
+			enemy.gameObject.SetActive(false);
 
 			break;
 		}
@@ -63,6 +75,8 @@ public class SwitchCharacterScript : MonoBehaviour {
 
 	void Update() 
 	{
+
+		// input from player
 		if (Input.GetButtonDown("Switch")) 
 		{	
 			SwitchCharacter();

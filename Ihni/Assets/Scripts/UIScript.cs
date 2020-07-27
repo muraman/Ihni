@@ -13,6 +13,7 @@ public class UIScript : MonoBehaviour
     {
         pauseUI.SetActive(false);
     }
+
     void Update()
     {
         if(Input.GetButtonDown("Cancel"))
@@ -44,7 +45,6 @@ public class UIScript : MonoBehaviour
 
     public void Loadmenu()
     {
-        Debug.Log("Load");
         Time.timeScale = 1f;
         SceneManager.LoadScene("Menu");
     }
@@ -56,7 +56,6 @@ public class UIScript : MonoBehaviour
 
     public void QuitGame()
     {
-        Debug.Log("Quit");
         Application.Quit();
     }
 
